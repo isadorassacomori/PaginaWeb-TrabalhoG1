@@ -12,8 +12,9 @@
     <header>
 
         <nav>
-            <div class="logo">
-                Disney+
+            <div class="topo">
+                <div class="logo">Disney+</div>
+                <a href="#">Entrar</a>
             </div>
 
             <ul>
@@ -24,12 +25,11 @@
             </ul>
 
             <form action="https://www.google.com/search" method="GET">
-                <label for="busca">Pesquisar:</label>
-                <input type="search" id="busca" name="q">
-                <button type="submit">Buscar</button>
+                <label for="busca"></label>
+                <input type="search" id="busca" name="q" placeholder="Pesquisar">
+                <button type="submit" aria-label="Buscar">⌕</button>
             </form>
 
-            <a href="#">Entrar</a>
         </nav>
     </header>
 
@@ -37,17 +37,12 @@
 
         <section class="banner">
 
-            <img src="imagens/banner.jpg" alt="Imagem de destaque do Disney+">
+            <img src="imagens/loki.jpg.jpg" alt="Imagem de destaque do Disney+">
 
             <div class="banner-conteudo">
-                <h2>Uma nova aventura espera por você</h2>
-
-                <p>
-                    Assista aos seus filmes e séries favoritos no Disney+.
-                </p>
-
+                <h2>Loki</h2>
+                <p>Após os acontecimentos de Vingadores: Ultimato, Loki embarca em uma nova aventura através do tempo e de diferentes realidades.</p>
                 <p>2026 • Super-Heróis, Ação e Fantasia</p>
-
                 <button>Assistir agora</button>
 
             </div>
@@ -56,32 +51,44 @@
 
         <section class="Recomendados">
 
-            <h2>Recomendados</h2>
+            <h2>Recomendados para Você</h2>
 
             <div class="lista-filmes">
 
             <article>
                 <img src="imagens/alice.jpg" alt="Cartaz do filme Alice no País das Maravilhas">
-                <h3>Alice no País das Maravilhas</h3>
-                <p>Uma aventura incrível para toda a família.</p>
+
+                <div class="info-filme">
+                    <h3>Alice no País das Maravilhas</h3>
+                    <p>2010 • Fantasia, aventura</p>
+                </div>
             </article>
 
             <article>
                 <img src="imagens/toystory3.jpg" alt="Cartaz do filme Toy Story 3">
-                <h3>Toy Story 3</h3>
-                <p>Uma história cheia de diversão e emoção.</p>
+
+                <div class="info-filme">
+                    <h3>Toy Story 3</h3>
+                    <p>2010 • Animação, Aventura</p>
+                </div>
             </article>
 
             <article>
                 <img src="imagens/coco.jpg" alt="Cartaz do filme Viva: A Vida é uma Festa">
-                <h3>Viva: A Vida é uma Festa</h3>
-                <p>Uma nova aventura para você descobrir.</p>
+
+                <div class="info-filme">
+                    <h3>Viva: A Vida é uma Festa</h3>
+                    <p>2017 • Animação, Família</p>
+                </div>
             </article>
 
             <article>
-                <img src="imagens/10coisasqueodeioemvoce.jpg" alt="Cartaz do filme 10 Coisas que Odeio em Você">
-                <h3>Viva: A Vida é uma Festa</h3>
-                <p>Uma nova aventura para você descobrir.</p>
+                <img src="imagens/10coisasqueodeioemvoce.jpg" alt="Cartaz do filme 10 Coisas que Eu Odeio em Você">
+
+                <div class="info-filme">
+                    <h3>10 Coisas que Eu Odeio em Você</h3>
+                    <p>1999 • Comédia, Romance</p>
+                </div>
             </article>
 
             </div>

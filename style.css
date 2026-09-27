@@ -17,8 +17,32 @@ header {
 
 nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 15px;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav input {
+    width: 265px;
+    padding: 8px;
+    background-color: #1f2026;
+    color: var(--cor-texto);
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+nav form button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f2026;
+    color: var(--cor-texto);
 }
 
 .logo {
@@ -28,7 +52,8 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -47,13 +72,25 @@ main {
     padding: 20px;
 }
 
+.banner {
+    margin-top: 20px;
+}
+
 .banner img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .banner-conteudo {
-    padding: 20px 0;
+    padding: 0;
+}
+
+.banner-conteudo h2 {
+    margin-bottom: 5px;
+}
+
+.banner-conteudo p {
+    margin: 8px 0;
 }
 
 .banner button {
@@ -66,6 +103,7 @@ main {
 
 .lista-filmes {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -75,20 +113,64 @@ main {
 }
 
 .lista-filmes article {
-    flex: 1;
+    background-color: #15171d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info-filme h3 {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.info-filme p {
+    margin: 0;
 }
 
 .lista-categorias {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     list-style: none;
     padding: 0;
 }
 
 .lista-categorias li {
-    background-color: #1f2026;
+    background-color: #1c1e26;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
     flex: 1;
+}
+
+.recomendados {
+    margin-top: 40px;
+}
+
+.recomendados h2 {
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lista-filmes {
+        flex-direction: row;
+    }
+
+    .lista-categorias {
+        flex-direction: row;
+    }
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
