@@ -41,7 +41,7 @@ O Flexbox foi utilizado para organizar elementos como o menu de navegação, os 
 ## 1.4 - Responsividade
 
 A página foi desenvolvida seguindo a abordagem Mobile First, incluindo a estilização para telas menores e utilizando uma media query para adaptar o conteúdo para telas maiores. 
-No celular, os filmes recomendados e as categorias são organizados em coluna. Em telas maiores eles passam a ser organizados em linha.
+No celular, os filmes recomendados e as categorias são organizados em duas colunas e duas linhas. Em telas maiores eles passam a ser organizados em uma linha.
 O Flexbox foi utilizado para auxiliar na organização dos elementos e permitir a adaptação do layout para diferentes tamanhos de tela.
 A responsividade da página foi testada utilizando as ferramentas de desenvolvedor do navegador, incluindo a visualização em formatos de celular e desktop.
 
