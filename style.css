@@ -19,17 +19,17 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav form {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 nav input {
-    width: 265px;
+    width: 180px;
     padding: 8px;
     background-color: #1f2026;
     color: var(--cor-texto);
@@ -45,9 +45,27 @@ nav form button {
     color: var(--cor-texto);
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.nav-topo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-topo form {
+    width: 100%;
+    justify-content: center;
+}
+
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 85px;
 }
 
 nav ul {
@@ -151,12 +169,20 @@ main {
     margin-bottom: 25px;
 }
 
+
 @media (min-width: 768px) {
 
-    nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    .nav-topo {
+        flex-wrap: nowrap;
+    }
+
+    .nav-topo form {
+        width: auto;
+        margin-left: auto;
+    }
+
+    nav input {
+        width: 265px;
     }
 
     .lista-filmes {
@@ -168,9 +194,3 @@ main {
     }
 }
 
-.topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
