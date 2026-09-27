@@ -1,0 +1,94 @@
+:root {
+    --cor-fundo: #0f1014;
+    --cor-texto: #ffffff;
+    --cor-destaque: #0063e5;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner-conteudo {
+    padding: 20px 0;
+}
+
+.banner button {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.lista-filmes {
+    display: flex;
+    gap: 20px;
+}
+
+.lista-filmes img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lista-filmes article {
+    flex: 1;
+}
+
+.lista-categorias {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-categorias li {
+    background-color: #1f2026;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney+</title>
+    <link rel="stylesheet" href="style.css">
 </head>
     
 <body>
@@ -11,57 +12,87 @@
     <header>
 
         <nav>
-            <h1>Disney</h1>
+            <div class="logo">
+                Disney+
+            </div>
 
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Início</a></li>
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Séries</a></li>
                 <li><a href="#">Categorias</a></li>
             </ul>
+
+            <form action="https://www.google.com/search" method="GET">
+                <label for="busca">Pesquisar:</label>
+                <input type="search" id="busca" name="q">
+                <button type="submit">Buscar</button>
+            </form>
+
+            <a href="#">Entrar</a>
         </nav>
     </header>
 
     <main>
 
-        <section>
-            <h2>Uma nova aventura espera por você</h2>
+        <section class="banner">
 
-            <p>
-                Assista aos seus filmes e séries favoritos no Disney+.
-            </p>
+            <img src="imagens/banner.jpg" alt="Imagem de destaque do Disney+">
 
-            <p>2026 • Aventura, Fantasia</p>
+            <div class="banner-conteudo">
+                <h2>Uma nova aventura espera por você</h2>
 
-            <button>Assistir agosra</button>
+                <p>
+                    Assista aos seus filmes e séries favoritos no Disney+.
+                </p>
+
+                <p>2026 • Super-Heróis, Ação e Fantasia</p>
+
+                <button>Assistir agora</button>
+
+            </div>
+
         </section>
 
-        <section>
+        <section class="Recomendados">
 
             <h2>Recomendados</h2>
 
+            <div class="lista-filmes">
+
             <article>
-                <h3>Filme 1</h3>
+                <img src="imagens/alice.jpg" alt="Cartaz do filme Alice no País das Maravilhas">
+                <h3>Alice no País das Maravilhas</h3>
                 <p>Uma aventura incrível para toda a família.</p>
             </article>
 
             <article>
-                <h3>Filme 2</h3>
+                <img src="imagens/toystory3.jpg" alt="Cartaz do filme Toy Story 3">
+                <h3>Toy Story 3</h3>
                 <p>Uma história cheia de diversão e emoção.</p>
             </article>
 
             <article>
-                <h3>Filme 3</h3>
+                <img src="imagens/coco.jpg" alt="Cartaz do filme Viva: A Vida é uma Festa">
+                <h3>Viva: A Vida é uma Festa</h3>
                 <p>Uma nova aventura para você descobrir.</p>
             </article>
+
+            <article>
+                <img src="imagens/10coisasqueodeioemvoce.jpg" alt="Cartaz do filme 10 Coisas que Odeio em Você">
+                <h3>Viva: A Vida é uma Festa</h3>
+                <p>Uma nova aventura para você descobrir.</p>
+            </article>
+
+            </div>
 
         </section>
 
         <section>
 
-            <h2>Exploque por categoria</h2>
+            <h2>Explore por categoria</h2>
 
-            <ul>
+            <ul class="lista-categorias">
                 <li>Disney</li>
                 <li>Pixar</li>
                 <li>Marvel</li>
